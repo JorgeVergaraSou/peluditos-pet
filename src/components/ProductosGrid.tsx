@@ -24,7 +24,7 @@ const ProductosGrid = () => {
 
   const handleClickWhatsApp = (producto: Producto) => {
     const message = `Hola, estoy interesado en el producto "${producto.nombre}" que cuesta $${producto.precio}`;
-    const whatsappLink = `https://wa.me/5491234567890?text=${encodeURIComponent(message)}`;
+    const whatsappLink = `https://wa.me/56920304635?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
   };
 

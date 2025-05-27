@@ -4,8 +4,9 @@ import './App.css';
 import Header from './components/Header';
 
 import ProductosGrid from './components/ProductosGrid';
-import Footer from './components/footer';
+
 import WhatsAppButton from './components/WhatsAppButton';
+import Footer from './components/Footer';
 
 function App() {
   return (
