@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="bg-light border-top py-4 mt-auto">
+  <footer className=" border-top py-4 mt-auto">
     <div className="container">
       <div className="row text-center text-md-start align-items-center">
         {/* Columna 1 */}

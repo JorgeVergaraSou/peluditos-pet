@@ -7,9 +7,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App bg-light">
+    <div className="App">
       <Header />
-     <main className="container py-5" style={{ minHeight: '85vh', maxWidth: '1140px' }}>
+     <main className="container py-5" >
         <ProductosGrid />
       </main>
       <Footer />

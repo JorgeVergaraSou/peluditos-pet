@@ -10,7 +10,7 @@ const FiltroProductos: React.FC<Props> = ({ onFiltroChange }) => {
       <input
         type="text"
         className="form-control w-50 mx-auto"
-        placeholder="Buscar por nombre..."
+        placeholder="Buscar productos por nombre..."
         onChange={(e) => onFiltroChange(e.target.value)}
       />
     </div>
