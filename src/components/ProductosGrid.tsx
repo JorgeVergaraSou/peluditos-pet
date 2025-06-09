@@ -35,6 +35,29 @@ const ProductosGrid = () => {
         setPaginaActual(1);
       }} />
 
+            {/* Navegación de páginas */}
+      {totalPaginas > 1 && (
+        <div className="d-flex justify-content-center mt-4">
+          <nav>
+            <ul className="pagination">
+              <li className={`page-item ${paginaActual === 1 ? 'disabled' : ''}`}>
+                <button className="page-link" onClick={() => cambiarPagina(paginaActual - 1)}>Anterior</button>
+              </li>
+              {Array.from({ length: totalPaginas }, (_, i) => (
+                <li key={i} className={`page-item ${paginaActual === i + 1 ? 'active' : ''}`}>
+                  <button className="page-link" onClick={() => cambiarPagina(i + 1)}>
+                    {i + 1}
+                  </button>
+                </li>
+              ))}
+              <li className={`page-item ${paginaActual === totalPaginas ? 'disabled' : ''}`}>
+                <button className="page-link" onClick={() => cambiarPagina(paginaActual + 1)}>Siguiente</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      )}
+
       <div className="row g-4 justify-content-center">
         {productosAMostrar.map((producto, index) => (
           <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex" key={index}>
